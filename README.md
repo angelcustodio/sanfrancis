@@ -1,23 +1,24 @@
-YosemiteSanFranciscoFont
-========================
+# San Francisco Font for OS X (Yosemite)
 
-Replace Helvetica Neue on your 10.10 Yosemite Mac with San Francisco – the Watch font.
+Replace Helvetica Neue on your Mac with San Francisco, the Apple Watch font.
 
-The font is adapted from San Francisco Display – Apple’s new typeface for the Watch. This project was inspired by jenskutilek’s [Fira System Font Replacement](https://github.com/jenskutilek/FiraSystemFontReplacement).
+The font has been adapted from San Francisco Display, the new typeface for the Apple Watch.
+Inspired by jenskutilek's [Fira System Font Replacement](https://github.com/jenskutilek/FiraSystemFontReplacement) and supermarin's [YosemiteSanFranciscoFont](https://github.com/supermarin/YosemiteSanFranciscoFont)
 
-How to Install:
-======================
-1. Download the zipped font files: <https://raw.githubusercontent.com/wellsriley/YosemiteSanFranciscoFont/master/SystemSanFrancisco.zip>
-2. Copy the 5 font files to `~/Library/Fonts` on your Mac. *(protip: press `cmd+shift+g` while in Finder to type the path directly.)*
-3. Log out and log back in to apply the changes.
+![example](https://raw.githubusercontent.com/angelcustodio/sanfrancis/master/sweet.png)
 
-How to Uninstall:
-=====================
-1. Navigate to `~/Library/Fonts` on your Mac and delete the 5 files starting with `System San Francisco Display`.
-2. Log out and log back in to apply the changes.
+## How to install:
+1. [Download the zip](https://raw.githubusercontent.com/angelcustodio/sanfrancis/master/SystemSanFrancisco.zip)
+2. Copy _all_ the font files into `~/Library/Fonts` on your Mac *(protip: press `cmd+shift+g` while in Finder to type the path directly)*
+4. Run `sudo chown root:wheel /Library/Fonts/System\ San\ Francisco*` to set the proper ownership of the font files
+5. Repair Disk Permissions `diskutil repairPermissions /`
+3. Log out and log back in to apply the changes
 
-How does it Work?
-====================
-These San Francisco fonts have a special name table with names identical to those of the system fonts. Because the font folder /Library/Fonts takes precedence over the fonts which are in /System/Library/Fonts, these specially crafted fonts are used for the user interface instead of the real system fonts. The original system fonts are not deleted or modified in any way.
+## How to uninstall:
+1. Go to `~/Library/Fonts` on your Mac and delete the files starting with `System San Francisco Display`
+2. Log out and log back in to apply the changes
 
-I assume no copyright over these fonts, nor any liability for improper installation or improper use. Use of these fonts should conform to Apple’s express copyright and rules.
+## How does it work?
+These San Francisco fonts have a special name table with names identical to those of the system fonts. Because the font folder `~/Library/Fonts` takes precedence over the fonts which are in `/System/Library/Fonts`, these specially crafted fonts are used for the user interface instead of the real system fonts. The original system fonts are not deleted or modified in any way.
+
+I assume no copyright over these fonts, nor any liability for improper installation or improper use. Use of these fonts should conform to Apple's express copyright and rules.
